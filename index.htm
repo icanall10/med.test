@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css?v=1.15">
+    <link rel="stylesheet" href="./css/tablet.css?v=1.15">
+    <link rel="stylesheet" href="./css/mobile.css?v=1.15">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/selectize.css">
+
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/selectize.min.js"></script>
+    <script type="text/javascript" src="./js/helpers.js"></script>
+    <script type="text/javascript" src="./js/js.js?v=1.15"></script>
+</head>
+<body class="is-home-page">
+
+
+<div id="header">
+    <div class="main">
+        <div class="container flex flex-middle">
+            <a href="/" class="logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+            <div class="contacts flex">
+                <div class="item item-address">
+                    г. Москва, м. Марьино<br>
+                    ул. Люблинская, д. 104
+                </div>
+                <div class="item item-phone">
+                    <div>+7(495) 349-66-71</div>
+                    <div>+7(495) 349-33-49</div>
+                </div>
+            </div>
+            <div class="social-links flex">
+                <a href="#" class="item item-fb">facebook</a>
+                <a href="#" class="item item-ig">instagram</a>
+                <a href="#" class="item item-vk">vkontakte</a>
+                <a href="#" class="item item-yt">youtube</a>
+            </div>
+            <div class="only-tablet">
+                <a href="#" class="order-link" data-modal-link="order-form">Запись на прием</a>
+            </div>
+            <div class="only-tablet-or-mobile">
+                <a href="#" class="menu-popup-link" data-menu-popup-link>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <div class="container only-mobile">
+            <a href="#" class="order-link" data-modal-link="order-form">Запись на прием</a>
+        </div>
+    </div>
+
+    <div class="footer only-desktop">
+        <div class="container flex flex-middle">
+            <ul class="menu flex">
+                <li><a href="#" data-dropdown-link="about">О центре</a></li>
+                <li><a href="#" data-dropdown-link="directions">Направления</a></li>
+                <li><a href="#">Вопросы</a></li>
+                <li><a href="#" data-dropdown-link="news">Новости</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="order-link" data-modal-link="order-form">Запись на прием</a>
+        </div>
+    </div>
+
+    <div class="dropdown-wrapper container">
+        <div class="dropdown" data-dropdown="directions">
+            <div class="inner flex">
+                <div class="search-and-directions">
+                    <div class="back-and-search flex flex-nowrap flex-middle">
+                        <div class="back only-mobile">
+                            <a href="#" data-dropdown-link>Назад</a>
+                        </div>
+                        <div class="search">
+                            <form action="#">
+                                <div class="flex flex-nowrap">
+                                    <input type="text" placeholder="Введите название услуги" autocomplete="off">
+                                    <button>Найти</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="items flex flex-left">
+                        <ul>
+                            <li><a href="#">Гинекология</a></li>
+                            <li><a href="#">Урология</a></li>
+                            <li><a href="#">Венерология</a></li>
+                            <li><a href="#">Рентген</a></li>
+                            <li><a href="#">Маммология</a></li>
+                            <li><a href="#">Эндокринология</a></li>
+                            <li><a href="#">Гастроэнтерология</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Иммунология</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Неврология</a></li>
+                            <li><a href="#">Проктология</a></li>
+                            <li><a href="#">Офтальмология</a></li>
+                            <li><a href="#">Дерматология</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Терапия</a></li>
+                            <li><a href="#">Амбулаторная хирургия</a></li>
+                            <li><a href="#">Флебология</a></li>
+                            <li><a href="#">ЛОР</a></li>
+                            <li><a href="#">Мануальная терапия</a></li>
+                            <li><a href="#">Массаж</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="ask-doctor flex flex-middle">
+                    <a href="#" class="button button-big button-dark" data-modal-link="ask-doctor-form">Задать вопрос
+                        врачу</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" data-dropdown="about">
+            <div class="inner">
+                <div class="back-and-search flex flex-nowrap flex-middle">
+                    <div class="back only-mobile">
+                        <a href="#" data-dropdown-link>Назад</a>
+                    </div>
+                </div>
+                <div class="items flex flex-left">
+                    <ul>
+                        <li><a href="#">Эндокринология</a></li>
+                        <li><a href="#">Гастроэнтерология</a></li>
+                        <li><a href="#">Рентген</a></li>
+                        <li><a href="#">Маммология</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Иммунология</a></li>
+                        <li><a href="#">Кардиология</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Флебология</a></li>
+                        <li><a href="#">Терапия</a></li>
+                        <li><a href="#">Амбулаторная хирургия</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" data-dropdown="news">
+            <div class="inner">
+                <div class="back-and-search flex flex-nowrap flex-middle">
+                    <div class="back only-mobile">
+                        <a href="#" data-dropdown-link>Назад</a>
+                    </div>
+                </div>
+                <div class="items flex flex-left">
+                    <ul>
+                        <li><a href="#">Новости 1</a></li>
+                        <li><a href="#">Новости 2</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Новости 3</a></li>
+                        <li><a href="#">Новости 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="menu-popup" data-menu-popup>
+    <div class="header flex flex-right flex-middle">
+        <a href="#" class="close" data-menu-popup-close-link>Закрыть</a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#" data-dropdown-link="about">О центре</a></li>
+            <li><a href="#" data-dropdown-link="directions">Направления</a></li>
+            <li><a href="#">Вопросы</a></li>
+            <li><a href="#" data-dropdown-link="news">Новости</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <div class="item item-address">
+            г. Москва, м. Марьино
+            ул. Люблинская, д. 104
+        </div>
+        <div class="item item-phone">
+            <div>+7(495) 349-66-71</div>
+            <div>+7(495) 349-33-49</div>
+        </div>
+    </div>
+    <div class="social-links light flex flex-left">
+        <a href="#" class="item item-fb">facebook</a>
+        <a href="#" class="item item-ig">instagram</a>
+        <a href="#" class="item item-vk">vkontakte</a>
+        <a href="#" class="item item-yt">youtube</a>
+    </div>
+</div>
+
+
+<div class="slider-block">
+    <div class="container">
+        <div class="owl-carousel">
+            <div class="item">
+                <div class="info">
+                    <div class="inner">
+                        <div class="text">
+                            <div class="text-1">Только опытные квалифицированные врачи</div>
+                            <div class="text-2">всех направлений</div>
+                        </div>
+                        <div class="more">
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./img/slide1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="info">
+                    <div class="inner">
+                        <div class="text">
+                            <div class="text-1">Только опытные квалифицированные врачи</div>
+                            <div class="text-2">всех направлений 2</div>
+                        </div>
+                        <div class="more">
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./img/slide2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="directions-block block">
+    <div class="inner container flex flex-nowrap">
+        <div class="directions">
+            <div class="block-title">Направления</div>
+            <div class="items">
+                <ul class="flex flex-left">
+                    <li><a href="#">Гинекология</a></li>
+                    <li><a href="#">Урология</a></li>
+                    <li><a href="#">Венерология</a></li>
+                    <li><a href="#">Рентген</a></li>
+                    <li><a href="#">Маммология</a></li>
+                    <li><a href="#">Эндокринология</a></li>
+                    <li><a href="#">Гастроэнтерология</a></li>
+                    <li><a href="#">Иммунология</a></li>
+                    <li><a href="#">Стоматология</a></li>
+                    <li><a href="#">Кардиология</a></li>
+                    <li><a href="#">Неврология</a></li>
+                    <li><a href="#">Проктология</a></li>
+                    <li><a href="#">Офтальмология</a></li>
+                    <li><a href="#">Дерматология</a></li>
+                    <li><a href="#">Терапия</a></li>
+                    <li><a href="#">Амбулаторная хирургия</a></li>
+                    <li><a href="#">Флебология</a></li>
+                    <li><a href="#">ЛОР</a></li>
+                    <li><a href="#">Мануальная терапия</a></li>
+                    <li><a href="#">Массаж</a></li>
+                    <li><a href="#">Диагностика</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gibdd">
+            <div class="img-and-text">
+                <div class="img">
+                    <img src="./img/gibdd2.png" alt="">
+                </div>
+                <div class="text">
+                    У нас вы можете оформить<br>
+                    справку в ГИБДД<br>
+                    для получения водительских прав.
+                </div>
+            </div>
+            <div class="more">
+                <a href="#" class="button button-white">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="about-block block">
+    <div class="block-inner container flex">
+        <div class="col col-1 flex">
+            <div class="box box-1 flex">
+                <div class="inner">
+                    <div class="name">
+                        Медицинский центр<br>
+                        в Марьино
+                    </div>
+                    <div class="text">
+                        Медицинский центр в Марьино - специализированное лечебное учреждение, предоставляющее
+                        медицинские
+                        услуги в области гинекологии, урологии, андрологии, гастроэнтерологии, эндокринологии,
+                        кардиологии,
+                        функциональной и лабораторной диагностики.<br>
+                        Наше учреждение оснащено современной лабораторно-диагностической базой. Мы сотрудничаем с
+                        научно-исследовательскими центрами и ведущими клиническими кафедрами Москвы. Профессионализм и
+                        опыт
+                        наших врачей, удобное место расположения нашего медицинского центра и график работы (мы работаем
+                        без
+                        выходных) помогут Вам в решении существующих проблем.<br>
+                        Главная наша задача - обеспечить своих пациентов высококвалифицированной, быстрой и эффективной
+                        медицинской помощью.
+                    </div>
+                    <div class="more">
+                        <a href="#" class="button button-white">Подробнее о центре</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-2 flex">
+            <div class="box box-2 flex">
+                <div class="inner flex flex-middle">
+                    <div>
+                        <div class="name">Новая программа лояльности</div>
+                        <div class="discount">скидка до 30%</div>
+                        <div class="text">Мы решили расширить систему поощрения и внедрить новую, более доступную и
+                            продвинутую бонусную программу «от 10 до 30»!
+                        </div>
+                        <div class="more">
+                            <a href="#" class="button button-white">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-3 flex">
+                <div class="inner flex flex-middle">
+                    <div class="ask">
+                        <a href="#" class="button button-white button-big" data-modal-link="ask-doctor-form">Задать
+                            вопрос врачу</a>
+                    </div>
+                    <div class="doctor">
+                        <img src="./img/doctor.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="doctors-block block block-grey">
+    <div class="container">
+        <div class="block-header">
+            <div class="block-title">Специалисты центра</div>
+            <div class="more">
+                <a href="#" class="button button-empty">Все спициалисты</a>
+            </div>
+        </div>
+        <div class="owl-carousel doctors-list flex flex-left">
+            <div class="item">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./img/doctor1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <a href="#">Коваленко Жанна Александровна</a>
+                    </div>
+                    <div class="specialty">Гинеколог-эндокринолог</div>
+                    <div class="info">
+                        <div>Стаж 23 года</div>
+                        <div>Врач высшей категории</div>
+                    </div>
+                    <div class="order-link">
+                        <a href="#" class="button" data-modal-link="order-form">Записаться на прием</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./img/doctor2.png" alt="">
+                    </div>
+                    <div class="name">
+                        <a href="#">Ширшина Ирина Александровна</a>
+                    </div>
+                    <div class="specialty">Эндокринолог</div>
+                    <div class="info">
+                        <div>Стаж 23 года</div>
+                        <div>Врач высшей категории</div>
+                    </div>
+                    <div class="order-link">
+                        <a href="#" class="button" data-modal-link="order-form">Записаться на прием</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./img/doctor3.png" alt="">
+                    </div>
+                    <div class="name">
+                        <a href="#">Щепилов Дмитрий Вячеславович</a>
+                    </div>
+                    <div class="specialty">Хирург</div>
+                    <div class="info">
+                        <div>Стаж 23 года</div>
+                        <div>Врач высшей категории</div>
+                    </div>
+                    <div class="order-link">
+                        <a href="#" class="button" data-modal-link="order-form">Записаться на прием</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./img/doctor4.png" alt="">
+                    </div>
+                    <div class="name">
+                        <a href="#">Ширшина Ирина Александровна</a>
+                    </div>
+                    <div class="specialty">Эндокринолог</div>
+                    <div class="info">
+                        <div>Стаж 23 года</div>
+                        <div>Врач высшей категории</div>
+                    </div>
+                    <div class="order-link" data-modal-link="order-form">
+                        <a href="#" class="button">Записаться на прием</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="services-slider-block block">
+    <div class="container">
+        <div class="owl-carousel">
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    <img src="./img/service1.png" alt="">
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name">
+                            <a href="#">Новая услуга в рентген-кабинете: маммография!</a>
+                        </div>
+                        <div class="text">Обследование проводит рентгенолог высшей, квалификации Егорова Е.А.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    Акция
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name-and-price">
+                            <div class="name">
+                                <a href="#">Оформление медицинской книжки</a>
+                            </div>
+                            <div class="price">2 750 р</div>
+                        </div>
+                        <div class="text">До 30 ноября 2018 г. оформление новой личной медицинской книжки за 2750!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    <img src="./img/service1.png" alt="">
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name">
+                            <a href="#">Новая услуга в рентген-кабинете: маммография!</a>
+                        </div>
+                        <div class="text">Обследование проводит рентгенолог высшей, квалификации Егорова Е.А.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    Акция
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name-and-price">
+                            <div class="name">
+                                <a href="#">Оформление медицинской книжки</a>
+                            </div>
+                            <div class="price">2 750 р</div>
+                        </div>
+                        <div class="text">До 30 ноября 2018 г. оформление новой личной медицинской книжки за 2750!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    <img src="./img/service1.png" alt="">
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name">
+                            <a href="#">Новая услуга в рентген-кабинете: маммография!</a>
+                        </div>
+                        <div class="text">Обследование проводит рентгенолог высшей, квалификации Егорова Е.А.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex flex-nowrap">
+                <div class="img flex">
+                    Акция
+                </div>
+                <div class="info flex">
+                    <div class="inner flex flex-column">
+                        <div class="name-and-price">
+                            <div class="name">
+                                <a href="#">Оформление медицинской книжки</a>
+                            </div>
+                            <div class="price">2 750 р</div>
+                        </div>
+                        <div class="text">До 30 ноября 2018 г. оформление новой личной медицинской книжки за 2750!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="gallery-block block block-grey">
+    <div class="container">
+        <div class="block-header">
+            <div class="block-title">Фотогалерея</div>
+            <div class="more">
+                <a href="#" class="button button-empty">Все фото</a>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item">
+            <img src="./img/gallery1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery2.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery3.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery2.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery3.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery2.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery3.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/gallery1.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="videos-block block block-grey">
+    <div class="container">
+        <div class="block-header">
+            <div class="block-title">Видеоматериалы</div>
+            <div class="more">
+                <a href="#" class="button button-empty">Все видео</a>
+            </div>
+        </div>
+        <div class="owl-carousel videos-list flex">
+            <div class="item">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bRqKbpFWP8w" frameborder="0"
+                            allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="name">Маммография</div>
+                <div class="text">
+                    Маммография представляет собой рентгенологический метод исследования молочных желез, предназначенный
+                    для диагностики раковой опухоли, доброкачественных новообразований, кистозных элементов.
+                </div>
+            </div>
+            <div class="item">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bRqKbpFWP8w" frameborder="0"
+                            allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="name">Маммография</div>
+                <div class="text">
+                    Маммография представляет собой рентгенологический метод исследования молочных желез, предназначенный
+                    для диагностики раковой опухоли, доброкачественных новообразований, кистозных элементов.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="statistic-block block">
+    <div class="container">
+        <div class="items flex">
+            <div class="item">
+                <div class="value">18</div>
+                <div class="name">лет успешной работы</div>
+            </div>
+            <div class="item">
+                <div class="value">60 000+</div>
+                <div class="name">пациентов</div>
+            </div>
+            <div class="item">
+                <div class="value">50+</div>
+                <div class="name">врачей</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="news-block">
+    <div class="container">
+        <div class="block-header">
+            <div class="block-title">Наши новости</div>
+            <div class="more">
+                <a href="#" class="button button-empty">Все новости</a>
+            </div>
+        </div>
+        <div class="news-list flex flex-left">
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">31.10.2018</div>
+                <div class="name">
+                    <a href="#">Первичная консультация ЛОРа в подарок!</a>
+                </div>
+                <div class="text">
+                    До 30 ноября 2018 г. при оплате курса лечения первичная консультация врача-отоларинголога в подарок!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="menu-and-contacts flex flex-nowrap">
+            <div class="menu flex">
+                <div class="item">
+                    <div class="name">Пациентам</div>
+                    <ul>
+                        <li><a href="#">Направления лечения</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="name">Информация</div>
+                    <ul>
+                        <li><a href="#">О центре</a></li>
+                        <li><a href="#">Наши специалисты</a></li>
+                        <li><a href="#">Лицензия</a></li>
+                        <li><a href="#">Фото</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="name">Врачам</div>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Отправить резюме</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="phone-and-work-time">
+                    <div class="phone">
+                        <div>+7(495)349-66-71</div>
+                        <div>+7(495)349-3-349</div>
+                    </div>
+                    <div class="work-time">
+                        <div class="item flex flex-right">
+                            <div class="name">ПН-ПТ</div>
+                            <div class="value">9:00 - 20:30</div>
+                        </div>
+                        <div class="item flex flex-right">
+                            <div class="name">СБ</div>
+                            <div class="value">9:00 - 16:30</div>
+                        </div>
+                        <div class="item flex flex-right">
+                            <div class="name">ВС</div>
+                            <div class="value">10:00 - 15:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    г. Москва,<br>
+                    м. Марьино, ул. Люблинская, д. 104
+                </div>
+            </div>
+        </div>
+        <div class="copyright-and-social flex flex-middle">
+            <div class="copyright">2018 © Медицинский центр в Марьино</div>
+            <div class="social flex flex-middle">
+                <div class="title">Мы в соцсетях:</div>
+                <div class="social-links flex">
+                    <a href="#" class="item item-fb">facebook</a>
+                    <a href="#" class="item item-ig">instagram</a>
+                    <a href="#" class="item item-vk">vkontakte</a>
+                    <a href="#" class="item item-yt">youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="order-form">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="inner">
+            <div class="modal-header">
+                <div class="modal-title">Предварительная запись на прием</div>
+                <a href="#" class="modal-close" data-modal-close>Закрыть</a>
+            </div>
+            <form action="#" class="order-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="ФИО">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Телефон">
+                </div>
+                <div class="form-group disabled-invisible">
+                    <input type="text"
+                           name="date"
+                           placeholder="Дата визита"
+                           autocomplete="off"
+                           data-mobile-date
+                    >
+                    <input type="date" name="date" disabled>
+                </div>
+                <div class="form-group item-directions flex">
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="1" id="order-form-direction-1">
+                        <label for="order-form-direction-1">Гинекология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="2" id="order-form-direction-2">
+                        <label for="order-form-direction-2">Урология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="3" id="order-form-direction-3">
+                        <label for="order-form-direction-3">Венерология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="4" id="order-form-direction-4">
+                        <label for="order-form-direction-4">Маммология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="5" id="order-form-direction-5">
+                        <label for="order-form-direction-5">Эндокринология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="6" id="order-form-direction-6">
+                        <label for="order-form-direction-6">Гастроэнтерология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="7" id="order-form-direction-7">
+                        <label for="order-form-direction-7">Стоматология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="8" id="order-form-direction-8">
+                        <label for="order-form-direction-8">Кардиология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="9" id="order-form-direction-9">
+                        <label for="order-form-direction-9">Неврология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="10" id="order-form-direction-10">
+                        <label for="order-form-direction-10">Офтальмология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="11" id="order-form-direction-11">
+                        <label for="order-form-direction-11">Терапия</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="12" id="order-form-direction-12">
+                        <label for="order-form-direction-12">Флебология</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="13" id="order-form-direction-13">
+                        <label for="order-form-direction-13">ЛОР</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="14" id="order-form-direction-14">
+                        <label for="order-form-direction-14">Мануальная терапия</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="15" id="order-form-direction-15">
+                        <label for="order-form-direction-15">Хирургия</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="direction" value="16" id="order-form-direction-16">
+                        <label for="order-form-direction-16">Дерматология</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="comment" rows="4" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="from-group item-actions">
+                    <div class="form-group">
+                        <button>Записаться</button>
+                    </div>
+                    <div class="form-group item-rules">
+                        Нажимая на кнопку, вы принимаете условия<br>
+                        <a href="#" target="_blank">пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="ask-doctor-form">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="inner">
+            <div class="modal-header">
+                <div class="modal-title">Вопрос врачу</div>
+                <a href="#" class="modal-close" data-modal-close>Закрыть</a>
+            </div>
+            <form action="#" class="ask-doctor-form">
+                <div class="form-group">
+                    <select name="subject" data-placeholder="Тема вопроса">
+                        <option value="0">Тема вопроса</option>
+                        <option value="1">Гинекология</option>
+                        <option value="2">Урология</option>
+                        <option value="3">Венерология</option>
+                        <option value="4">Рентген</option>
+                        <option value="5">Маммология</option>
+                        <option value="6">Эндокринология</option>
+                        <option value="7">Гастроэнтерология</option>
+                        <option value="8">Иммунология</option>
+                        <option value="9">Стоматология</option>
+                        <option value="10">Кардиология</option>
+                        <option value="11">Неврология</option>
+                        <option value="12">Проктология</option>
+                        <option value="13">Офтальмология</option>
+                        <option value="14">Дерматология</option>
+                        <option value="15">Терапия</option>
+                        <option value="16">Амбулаторная хирургия</option>
+                        <option value="17">Флебология</option>
+                        <option value="18">ЛОР</option>
+                        <option value="19">Мануальная терапия</option>
+                        <option value="20">Массаж</option>
+                        <option value="21">Диагностика</option>
+                    </select>
+                </div>
+                <div class="form-group item-files">
+                    <label id="ask-form-files">К вопросу можно приложить до 3-ех фото весом не более 1 мб каждое</label>
+                    <input type="file" id="ask-form-files" multiple>
+                </div>
+                <div class="form-group">
+                    <textarea name="comment" rows="4" placeholder="Текст вашего вопроса"></textarea>
+                </div>
+                <div class="from-group item-actions">
+                    <div class="form-group">
+                        <button>Отправить вопрос</button>
+                    </div>
+                    <div class="form-group item-rules">
+                        Нажимая на кнопку, вы принимаете условия<br>
+                        <a href="#" target="_blank">пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
