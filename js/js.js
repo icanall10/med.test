@@ -198,7 +198,30 @@
             .once()
             .selectize();
 
+
+        $('.sticky-menu')
+            .once('sticky-menu')
+            .on('refreshState', function () {
+                let $this = $(this);
+                let offsetTop = $this.offset().top;
+                let scrollTop = $(window).scrollTop();
+
+                console.log(scrollTop >= offsetTop);
+
+                if (scrollTop > offsetTop) {
+                    $this.addClass('fixed');
+                } else {
+                    $this.removeClass('fixed');
+                }
+            })
+            .trigger('refreshState');
+
     }
+
+
+    $(document).scroll(function () {
+        $('.sticky-menu').trigger('refreshState');
+    });
 
 
     $(document).ready(function () {

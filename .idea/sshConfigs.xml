@@ -5,6 +5,9 @@
       <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="5.101.116.27" id="a0bf8798-23f3-4ef6-b4cf-2d280a6f0c2d" port="22" customName="dev" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
         <option name="customName" value="dev" />
       </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="5.101.116.27" id="1b7ddcae-e509-4d17-869d-6c66cbfc2f8c" port="22" customName="dev" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="dev" />
+      </sshConfig>
     </configs>
   </component>
 </project>

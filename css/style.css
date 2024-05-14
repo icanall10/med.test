@@ -1385,3 +1385,86 @@ form .disabled-invisible input:disabled {
     }
 }
 
+
+.sticky-menu {
+    height: 60px;
+
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+
+    transition: 0.1s;
+}
+.sticky-menu ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    list-style: none;
+    padding: 16px 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    transition: 0.1s;
+}
+
+.sticky-menu.fixed {
+    border-color: transparent;
+}
+.sticky-menu.fixed:after {
+    content: '';
+
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 50px;
+
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+.sticky-menu.fixed ul {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+    padding: 12px 0;
+}
+
+.sticky-menu a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 0.1s;
+}
+.sticky-menu a:hover {
+    color: #222;
+}
+.sticky-menu a.call {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sticky-menu a span {
+    display: block;
+    line-height: 1.1;
+    border-bottom: 1px solid;
+}
+.sticky-menu a.call .icon {
+    width: 26px;
+    height: 26px;
+
+    box-sizing: border-box;
+
+    padding: 5px;
+    background: #00abbd;
+    border-radius: 100px;
+}
+.sticky-menu a.call .icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
